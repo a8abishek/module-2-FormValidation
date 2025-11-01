@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:40px auto;
+    background: url("https://cdn.wallpapersafari.com/22/22/RUgdhy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+     position: relative;
+}
+#form-title{
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+    letter-spacing: 1.5px;
+}
+.container{
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: 400px 490px;
+}
+.content-container{
+    background-color: #57e790;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px -5px 150px green;
+}
+#style1{
+    font-size: 14px;
+}
+#style2,#style3{
+    font-weight: lighter;
+    font-size: 14px;
+}
+#style3{
+    font-weight: bold;
+}
+#style4{
+    font-size: 10px;
+    width: 80%;
+}
+.form-container{
+    background-color: #1f434d;
+    padding-inline: 50px;
+    padding-block: 50px;
+    box-shadow: 5px 5px 150px green;
+}
+#form-name{
+    color: white;
+    margin-top: 10px;
+}
+#form-name span{
+    font-weight: bold;
+    font-size: 18px;
+}
+input{
+    height: 30px;
+}
+label{
+    color: white;
+}
+
+/**/
+.form-control.error {
+  border-color: red;
+}
+.success {
+  border-color: green;
+}
+.error-message {
+  color: red;
+  font-size: 0.80rem;
+}
+
+/* For tablets and small laptops */
+@media (max-width: 768px) {
+  body {
+    margin: 50px auto;
+    background-size: cover;
+  }
+
+  .container {
+    grid-template-columns: 1fr; 
+    max-width: 90%;
+    margin: 0 auto;
+    row-gap: 20px;
+  }
+
+  .content-container {
+    padding: 30px;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .form-container {
+    padding-inline: 30px;
+    padding-block: 40px;
+  }
+
+  #style4 {
+    width: 90%;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 450px) {
+  body {
+    margin: 20px auto;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr; 
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .content-container {
+    background-color: #57e790;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 14px;
+    box-shadow: none;
+  }
+
+  .form-container {
+    background-color: #1f434d;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  input {
+    width: 100%;
+    height: 35px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  #style1, #style2, #style3, #style4 {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
