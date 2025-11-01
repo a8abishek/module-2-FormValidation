@@ -8,7 +8,7 @@ const checkbox = document.getElementById("termsCheck");
 
 //validation ONLY when form is submitted;
 form.addEventListener("submit", (event) => {
-    event.preventDefault(); // stop auto reload
+    event.preventDefault(); 
     formValidate();
 });
 
@@ -71,6 +71,7 @@ function formValidate() {
         form.reset();
     }
 }
+
 function showError(input, message, errorId) {
     const errorElement = document.getElementById(errorId);
     errorElement.textContent = message;

@@ -11,6 +11,7 @@
     <!--External style file link here-->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="form-title">
         <h1>Spotify-Signup Form</h1>
@@ -21,18 +22,19 @@
             <p>Premium Subscription</p>
             <div>
                 <h2>$9.99 <span id="style1">/ month</span></h2>
-            <ul>
-                <li>Suffle Play</li>
-                <li>Ad Free</li>
-                <li>Unlimited Skips</li>
-                <li>Listen offline</li>
-                <li>Play any track</li>
-                <li>High quality audio</li>
-            </ul>
+                <ul>
+                    <li>Suffle Play</li>
+                    <li>Ad Free</li>
+                    <li>Unlimited Skips</li>
+                    <li>Listen offline</li>
+                    <li>Play any track</li>
+                    <li>High quality audio</li>
+                </ul>
             </div>
             <p id="style2">Start your 30 day free trial</p>
             <p id="style3"><span>Family</span> and <span>Students</span> offers available</p>
-            <p id="style4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam ad necessitatibus unde culpa
+            <p id="style4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam ad necessitatibus unde
+                culpa
                 aliquid totam vitae saepe.</p>
         </div><!--content-container-->
         <!--form-container-->
@@ -42,36 +44,38 @@
             <p id="form-name">Sign In / <span>Sign up</span></p>
             <!--form-->
             <form id="signupForm" novalidate>
+                <!--name-->
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
                     <input id="name" type="text" class="form-control" />
                     <small id="nameError" class="error-message"></small>
                 </div>
-
+                <!--email-->
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input id="email" type="email" class="form-control" />
                     <small id="emailError" class="error-message"></small>
                 </div>
-
+                <!--password-->
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input id="password" type="password" class="form-control" />
                     <small id="passwordError" class="error-message"></small>
                 </div>
-
+                <!--confirm password-->
                 <div class="mb-3">
                     <label for="confirmPassword" class="form-label">Confirm Password</label>
                     <input id="confirmPassword" type="password" class="form-control" />
                     <small id="confirmPasswordError" class="error-message"></small>
                 </div>
-
+                <!--checkbox-->
                 <div class="mb-3 form-check">
                     <input id="termsCheck" class="form-check-input" type="checkbox" />
-                    <label class="form-check-label" for="termsCheck">I agree to the <a href="#">terms</a> and <a href="#">conditions</a></label>
+                    <label class="form-check-label" for="termsCheck">I agree to the <a href="#">terms</a> and <a
+                            href="#">conditions</a></label>
                     <small id="termsError" class="error-message d-block"></small>
                 </div>
-
+                <!--submit button-->
                 <button type="submit" class="btn btn-primary w-100">Sign Up</button>
             </form>
         </div>
